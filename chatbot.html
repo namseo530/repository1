@@ -9,16 +9,19 @@
 
 <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
 <df-messenger
   location="us-central1"
   project-id="gen-lang-client-0936948919"
   agent-id="607c461b-3d5e-488c-84a5-a99f1d8d0bc9"
   language-code="ko"
-  max-query-length="-1">
+  max-query-length="-1"
+  full-screen="true">
   <df-messenger-chat
     chat-title="RP-Agent">
   </df-messenger-chat>
 </df-messenger>
+
 <style>
   df-messenger {
     z-index: 999;
@@ -31,9 +34,13 @@
     bottom: 0;
     right: 0;
     top: 0;
-    width: 100%; /* Notion에 꽉 차도록 350px 대신 100%로 변경 */
+    width: 100%; 
     height: 100%;
   }
+  df-messenger-chat-message {
+    white-space: pre-wrap !important; 
+    word-break: break-all !important;
+  }
 </style>
 
 </body>
